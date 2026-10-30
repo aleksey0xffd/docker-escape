@@ -3,6 +3,14 @@
 apt-get install libcap2-bin
 capsh --print
 ```
+или
+```
+cat /proc/1/status | grep Cap
+```
+и на другой системе
+```
+capsh --decode=XXX 
+```
 
 Запуск контейнера на хосте:
 ```bash
